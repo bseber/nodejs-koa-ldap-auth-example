@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>nodejs-koa-ldap-auth-example</title>
+	</head>
+	<body>
+		<form action="/login" method="POST" >
+			<input type="hidden" name="_csrf" value="{{csrf}}" />
+			{{#if error}}
+			<p>Meh, invalid credentials :-/</p>
+			{{/if}}
+			<div>
+				<label for="username">Username</label>
+				<input id="username" name="username" type="text" placeholder="Username" value="{{username}}" />
+			</div>
+			<div>
+				<label for="password">Password</label>
+				<input id="password" name="password" type="password" placeholder="*********" />
+			</div>
+			<div>
+				<button type="submit">login</button>
+			</div>
+		</form>
+	</body>
+</html>

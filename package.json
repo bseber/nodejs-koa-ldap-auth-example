@@ -1,0 +1,28 @@
+{
+	"name": "nodejs-koa-ldap-auth-example",
+	"author": "Benjamin Seber <benjamin.seber@mailbox.org>",
+	"private": true,
+	"scripts": {
+		"dev": "NODE_ENV=development onchange -i -k 'src/**/*.js' -- node src/server/index.js"
+	},
+	"dependencies": {
+		"handlebars": "4.7.6",
+		"koa": "2.11.0",
+		"koa-bodyparser": "4.3.0",
+		"koa-csrf": "3.0.8",
+		"koa-helmet": "5.2.0",
+		"koa-passport": "4.1.3",
+		"koa-route": "3.2.0",
+		"koa-session": "5.13.1",
+		"koa-views": "6.2.1",
+		"passport-ldapauth": "2.1.4",
+		"passport-local": "1.0.0"
+	},
+	"devDependencies": {
+		"eslint": "6.8.0",
+		"eslint-config-prettier": "6.10.1",
+		"eslint-plugin-prettier": "3.1.2",
+		"onchange": "6.1.0",
+		"prettier": "2.0.4"
+	}
+}
