@@ -6,7 +6,7 @@
 		"dev": "NODE_ENV=development onchange -i -k 'src/**/*.js' -- node src/server/index.js"
 	},
 	"dependencies": {
-		"handlebars": "4.7.6",
+		"handlebars": "4.7.7",
 		"koa": "2.11.0",
 		"koa-bodyparser": "4.3.0",
 		"koa-csrf": "3.0.8",
